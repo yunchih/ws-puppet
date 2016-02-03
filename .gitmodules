@@ -1,6 +1,6 @@
 [submodule "repo"]
 	path = repo
-	url = git://github.com/yunchih/puppet-master-repo.git
+	url = git@github.com:yunchih/puppet-master-repo.git
 [submodule "conf"]
 	path = conf
-	url = git://github.com/yunchih/puppet-master-conf.git
+	url = git@github.com:yunchih/puppet-master-conf.git
