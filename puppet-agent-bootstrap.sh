@@ -1,12 +1,13 @@
 #! /bin/bash -e
 
 echo "puppet ruby" | xargs pacman -Sy --noconfirm ;
+rm -rf /etc/puppetlabs/;
 mkdir -p /etc/puppetlabs/puppet;
 cat << EOF > /etc/puppetlabs/puppet/puppet.conf
 
 [main] 
     certname = $(hostname)
-	server = $puppet_server #Fix me: fill in the hostname of puppet master
+	server = repo
 	environment = testing
 
 EOF
